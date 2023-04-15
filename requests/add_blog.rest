@@ -2,8 +2,8 @@ POST http://localhost:3003/api/blogs/
 Content-Type: application/json
 
 {
-    "title": "test5", 
-    "author": "Erling Haaland",
+    "title": "test6", 
+    "author": "Neymar Jr.",
     "url": "http://localhost:3003/api/blogs",
-    "likes": 99
+    "likes": 111
 }
