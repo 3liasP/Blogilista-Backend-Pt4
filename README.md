@@ -11,7 +11,7 @@
 
 ### Tehtävä 4.1: blogilista step1
 - Toimii ongelmitta.
-- Sijainnissa: [index-4-1.js](/bloglist-backend/index-4-1.js)
+- Sijainnissa: [index-4-1.js](/index-4-1.js)
 - Tehty yhteen tiedostoon koodatusta sovellusrungosta toimiva *npm-projekti*.
 - Sovellus konfiguroitu suoritettavaksi *nodemonilla*
 - Sovellus käyttää MongoDB Atlasissa sijaitsevaa tietokantaa.
@@ -21,7 +21,7 @@
 
 ### Tehtävä 4.2: blogilista step2
 - Toimii ongelmitta.
-- Toistaiseksi sijainnissa: [index.js](/bloglist-backend/index.js)
+- Toistaiseksi sijainnissa: [index.js](/index.js)
 - Sovelluksen koodi jaettu useaan moduuliin.
 - Virheiden käsittely keskitetty middlewareen.
 - Sovelluksen hakemistorakenne muutettu seuraavanlaiseksi:
@@ -42,8 +42,8 @@
 
 ### Tehtävä 4.3: apufunktioita ja yksikkötestejä, step1
 - Toimii ongelmitta.
-- Tehty apufunktio tiedostoon [utils/list_helper.js](/bloglist-backend/utils/list_helper.js)
-- Tehty testi tiedostoon [tests/dummy.test.js](/bloglist-backend/tests/dummy.test.js)
+- Tehty apufunktio tiedostoon [utils/list_helper.js](/utils/list_helper.js)
+- Tehty testi tiedostoon [tests/dummy.test.js](/tests/dummy.test.js)
 - Komento `npm test` tulostaa seuraavsti, eli testi on läpäisty onnistuneesti.
 ```
 > part4-bloglist-backend@0.0.1 test
