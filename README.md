@@ -124,3 +124,10 @@ Ran all test suites.
     - Testataan, että poiston jälkeen blogeja on yksi vähemmän,
     - Testataan myös, että poiston jälkeen samalla id:llä ei blogia enää löydy.
 
+### Tehtävä 4.8: blogilistan laajennus, step2
+- Toimii ongelmitta.
+- Toteutettu sovellukseen mahdollisuus yksittäisen blogin muokkaamiseen.
+- Käytetään edelleen async/awaitia ja noudatetaan HTTP-rajapinnassa RESTful-käytänteitä
+- Käytetään `express-async-errors` -kirjastoa
+- Lisätty myös [requests/edit_blog.rest](/requests/edit_blog.rest) pyynnön ja toimiinnallisuuden testaamiseen
+
