@@ -129,5 +129,12 @@ Ran all test suites.
 - Toteutettu sovellukseen mahdollisuus yksittäisen blogin muokkaamiseen.
 - Käytetään edelleen async/awaitia ja noudatetaan HTTP-rajapinnassa RESTful-käytänteitä.
 - Käytetään `express-async-errors` -kirjastoa.
-- Lisätty myös [requests/edit_blog.rest](/requests/edit_blog.rest) pyynnön ja toimiinnallisuuden testaamiseen.
+- Lisätty myös [requests/edit_blog.rest](/requests/edit_blog.rest) pyynnön ja toiminnallisuuden testaamiseen.
 
+### Tehtävä 4.9: blogilistan laajennus, step3
+- Toimii ongelmitta.
+- Toteutettu sovellukseen mahdollisuus luoda käyttäjiä tekemällä HTTP POST -pyyntö osoitteeseen `api/users`.
+    - Käyttäjien router: [controllers/users.js](/controllers/users.js)
+    - Käyttäjien skeema: [models/users.js](/models/users.js)
+    - Käyttäjillä on käyttäjätunnus, salasana ja nimi.
+- Lisätty myös [requests/edit_blog.rest](/requests/add_user.rest) pyynnön ja sen toiminnallisuuden testaamiseen.
