@@ -118,16 +118,16 @@ Ran all test suites.
 - Toteutetty sovellukseen mahdollisuus yksittäisen blogin poistoon metodilla `blogsRouter.delete`.
     - Sijainti: [controllers/blogs.js](/controllers/blogs.js)
     - Lisätty myös [requests/delete_blog.rest](/requests/delete_blog.rest)
-    - Lisätty samalla sijaintiin myös metodi `blogsRouter.get` yksittäisen blogin hakemiseen
-- Käytetään async/awaitia ja noudatetaan HTTP-rajapinnassa RESTful-käytänteitä
+    - Lisätty samalla sijaintiin myös metodi `blogsRouter.get` yksittäisen blogin hakemiseen.
+- Käytetään async/awaitia ja noudatetaan HTTP-rajapinnassa RESTful-käytänteitä.
 - Toteutettu ominaisuudelle myös testit:
-    - Testataan, että poiston jälkeen blogeja on yksi vähemmän,
+    - Testataan, että poiston jälkeen blogeja on yksi vähemmän.
     - Testataan myös, että poiston jälkeen samalla id:llä ei blogia enää löydy.
 
 ### Tehtävä 4.8: blogilistan laajennus, step2
 - Toimii ongelmitta.
 - Toteutettu sovellukseen mahdollisuus yksittäisen blogin muokkaamiseen.
-- Käytetään edelleen async/awaitia ja noudatetaan HTTP-rajapinnassa RESTful-käytänteitä
-- Käytetään `express-async-errors` -kirjastoa
-- Lisätty myös [requests/edit_blog.rest](/requests/edit_blog.rest) pyynnön ja toimiinnallisuuden testaamiseen
+- Käytetään edelleen async/awaitia ja noudatetaan HTTP-rajapinnassa RESTful-käytänteitä.
+- Käytetään `express-async-errors` -kirjastoa.
+- Lisätty myös [requests/edit_blog.rest](/requests/edit_blog.rest) pyynnön ja toimiinnallisuuden testaamiseen.
 
