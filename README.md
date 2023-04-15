@@ -1,10 +1,7 @@
 # Web-ohjelmointi: Blogilista-backend -projekti
 ## Osa 4, tehtävät 4.1 - 
 
-### *Tärkeää*
-- Ei lisättävää toistaiseksi.
-
-### *Muuta*
+### *Huomioitavaa*
 - Vanhojen vastauksien `index.js` -tiedostot sisältyvät ja ovat nimetty kunkin tehtävän mukaan (esim. `index-4-1.js` tehtävälle 4.1 jne.).
 - Viimeisin vastaus tehtävään on aina tiedostossa `index.js`.
 - Vanhat vastaukset ovat lähinnä varmuuskopioita toimivista versioista ja ne demonstroivat työnkulkua.
@@ -115,3 +112,15 @@ Ran all test suites.
     √ a valid blog can be added  (197 ms)
     ```
 - Refaktoroitu blogin lisäyksen tietokantaan suorittava metodi `blogsRouter.post` käyttämään promisejen sijaan async/awaitia.
+
+### Tehtävä 4.7: blogilistan laajennus, step1
+- Toimii ongelmitta.
+- Toteutetty sovellukseen mahdollisuus yksittäisen blogin poistoon metodilla `blogsRouter.delete`.
+    - Sijainti: [controllers/blogs.js](/controllers/blogs.js)
+    - Lisätty myös [requests/delete_blog.rest](/requests/delete_blog.rest)
+    - Lisätty samalla sijaintiin myös metodi `blogsRouter.get` yksittäisen blogin hakemiseen
+- Käytetään async/awaitia ja noudatetaan HTTP-rajapinnassa RESTful-käytänteitä
+- Toteutettu ominaisuudelle myös testit:
+    - Testataan, että poiston jälkeen blogeja on yksi vähemmän,
+    - Testataan myös, että poiston jälkeen samalla id:llä ei blogia enää löydy.
+
