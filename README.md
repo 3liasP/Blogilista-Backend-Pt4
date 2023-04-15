@@ -42,20 +42,49 @@
 
 ### Tehtävä 4.3: apufunktioita ja yksikkötestejä, step1
 - Toimii ongelmitta.
-- Tehty apufunktio tiedostoon [utils/list_helper.js](/utils/list_helper.js)
+- Tehty apufunktio `dummy` tiedostoon [utils/list_helper.js](/utils/list_helper.js)
 - Tehty testi tiedostoon [tests/dummy.test.js](/tests/dummy.test.js)
-- Komento `npm test` tulostaa seuraavsti, eli testi on läpäisty onnistuneesti.
+- Komento `npm test` tulostaa seuraavasti, eli testi on läpäisty onnistuneesti:
 ```
 > part4-bloglist-backend@0.0.1 test
 > jest --verbose
 
- PASS  tests/dummy.test.js
+PASS  tests/dummy.test.js
   √ dummy returns one (2 ms)
 
 Test Suites: 1 passed, 1 total
 Tests:       1 passed, 1 total
 Snapshots:   0 total
 Time:        0.93 s
+Ran all test suites.
+```
+
+### Tehtävä 4.4: apufunktioita ja yksikkötestejä, step2
+- Toimii ongelmitta.
+- Tehty apufunktio `totalLikes` tiedostoon [utils/list_helper.js](/utils/list_helper.js)
+    - Funktio palauttaa blogien yhteenlaskettujen tykkäysten eli likejen määrän.
+- Määritelty funktiolle sopivat testit:
+    - Tyhjä lista palauttaa nollan.
+    - Yhden blogin sisältävän listan yhteistykkäykset vastaavat kyseisen blogin tykkäysten määrää.
+    - Erään isomman blogilistan tykkäykset lasketaan oikein.
+- Testit on sijoitettu describe-lohkoon tiedostossa [tests/totalLikes.test.js](/tests/totalLikes.test.js)
+- Komento `npm test` tulostaa seuraavasti, eli testi on läpäisty onnistuneesti:
+```
+> part4-bloglist-backend@0.0.1 test
+> jest --verbose
+
+PASS  tests/dummy.test.js
+  √ dummy returns one (5 ms)
+
+PASS  tests/totalLikes.test.js
+ √ when list has only one blog equals the likes of that (2 ms) 
+ √ when list has no blogs equals the likes 0 
+ √ when list has multiple blogs equals the likes the sum of all likes (1 ms) 
+ 
+Test Suites: 2 passed, 2 total
+Tests: 4 passed, 4 total
+Snapshots: 0 total
+Time: 3.172 s
 Ran all test suites.
 ```
 

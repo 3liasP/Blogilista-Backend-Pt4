@@ -2,8 +2,8 @@ POST http://localhost:3003/api/blogs/
 Content-Type: application/json
 
 {
-    "title": "test6", 
-    "author": "Neymar Jr.",
+    "title": "test7", 
+    "author": "Declan Rice",
     "url": "http://localhost:3003/api/blogs",
-    "likes": 111
+    "likes": 41
 }

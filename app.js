@@ -19,11 +19,9 @@ mongoose.connect(config.MONGODB_URI)
 })
 
 app.use(cors())
-// ei varmaa, vaatiiko tätä!
 app.use(express.static('build')) 
 app.use(express.json())
 app.use(middleware.requestLogger)
-// Tämä myös hieman kysymysmerkki!
 app.use('/api/blogs', blogsRouter)
 
 app.use(middleware.unknownEndpoint)
