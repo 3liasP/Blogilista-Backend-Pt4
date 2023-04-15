@@ -88,3 +88,16 @@ Time: 3.172 s
 Ran all test suites.
 ```
 
+### Tehtävä 4.5: blogilistan testit, step 1
+- Toimii ongelmitta.
+- Tehty SuperTest-kirjastolla testi blogilistan osoitteeseen `/api/blogs` tapahtuvalle HTTP GET -pyynnölle.
+    - Testataan, että sovellus palauttaa oikean määrän JSON-muotoisia blogeja.
+    - Testit läpäistään onnistuneesti, testattu komennolla `npm test`
+- Luotu uusi testi tiedostoon [tests/blogs_api.test.js](/tests/blogs_api.test.js).
+- Muita osiossa tehtyjä muutoksia:
+    - `package.json muokattu`, SuperTest asennettu.
+    - [utils/config.js](/utils/config.js) muokattu, lisätty erillinen osoite testitietokannalle.
+    - [logger.js](/utils/logger.js) muokattu, ei tulosta ilmoituksia testitilassa.
+    - Refaktoroi blogilistan kaikki blogit palauttava metodi `blogsRouter.get` käyttämään promisejen sijaan async/awaitia.
+        - Sijainti: [controllers/blogs.js](/controllers/blogs.js)
+
