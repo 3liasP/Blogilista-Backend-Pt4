@@ -25,8 +25,32 @@ beforeEach(async () => {
 
 test('all blogs are returned', async () => {
     const response = await api.get('/api/blogs')
-    
+
     expect(response.body).toHaveLength(helper.initialBlogs.length)
+})
+
+
+test('a valid blog can be added ', async () => {
+    const newBlog = {
+        title: "testing a whole new blog!",
+        author: "Wayne Rooney",
+        url: "http://localhost:3003/api/blogs",
+        likes: 68
+    }
+  
+    await api
+      .post('/api/blogs')
+      .send(newBlog)
+      .expect(201)
+      .expect('Content-Type', /application\/json/)
+  
+    const BlogsAtEnd = await helper.blogsInDb()
+    expect(BlogsAtEnd).toHaveLength(helper.initialBlogs.length + 1)
+  
+    const title = BlogsAtEnd.map(n => n.title)
+    expect(title).toContain(
+      'testing a whole new blog!'
+    )
 })
 
 // This one last!

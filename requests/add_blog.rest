@@ -2,8 +2,8 @@ POST http://localhost:3003/api/blogs/
 Content-Type: application/json
 
 {
-    "title": "test7", 
-    "author": "Declan Rice",
+    "title": "test8", 
+    "author": "Jack Grealish",
     "url": "http://localhost:3003/api/blogs",
-    "likes": 41
+    "likes": 71
 }

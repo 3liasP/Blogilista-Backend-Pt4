@@ -68,7 +68,7 @@ Ran all test suites.
     - Yhden blogin sisältävän listan yhteistykkäykset vastaavat kyseisen blogin tykkäysten määrää.
     - Erään isomman blogilistan tykkäykset lasketaan oikein.
 - Testit on sijoitettu describe-lohkoon tiedostossa [tests/totalLikes.test.js](/tests/totalLikes.test.js)
-- Komento `npm test` tulostaa seuraavasti, eli testi on läpäisty onnistuneesti:
+- Komento `npm test` tulostaa seuraavasti, eli testit on läpäisty onnistuneesti:
 ```
 > part4-bloglist-backend@0.0.1 test
 > jest --verbose
@@ -92,12 +92,26 @@ Ran all test suites.
 - Toimii ongelmitta.
 - Tehty SuperTest-kirjastolla testi blogilistan osoitteeseen `/api/blogs` tapahtuvalle HTTP GET -pyynnölle.
     - Testataan, että sovellus palauttaa oikean määrän JSON-muotoisia blogeja.
-    - Testit läpäistään onnistuneesti, testattu komennolla `npm test`
+    - Testit läpäistään onnistuneesti, testattu komennolla `npm test`:
+    ```
+     PASS tests/blogs_api.test.js
+    √ all blogs are returned (734 ms)
+    ```
 - Luotu uusi testi tiedostoon [tests/blogs_api.test.js](/tests/blogs_api.test.js).
 - Muita osiossa tehtyjä muutoksia:
     - `package.json muokattu`, SuperTest asennettu.
     - [utils/config.js](/utils/config.js) muokattu, lisätty erillinen osoite testitietokannalle.
     - [logger.js](/utils/logger.js) muokattu, ei tulosta ilmoituksia testitilassa.
-    - Refaktoroi blogilistan kaikki blogit palauttava metodi `blogsRouter.get` käyttämään promisejen sijaan async/awaitia.
+    - Refaktoroitu blogilistan kaikki blogit palauttava metodi `blogsRouter.get` käyttämään promisejen sijaan async/awaitia.
         - Sijainti: [controllers/blogs.js](/controllers/blogs.js)
 
+### Tehtävä 4.6: blogilistan testit, step 2
+- Toimii ongelmitta.
+- Tehty testi, joka varmistaa, että sovellukseen voi lisätä blogeja osoitteeseen `/api/blogs` tapahtuvalla `HTTP POST` -pyynnöllä.
+    -  Tämä uusi testi myös tiedostossa [tests/blogs_api.test.js](/tests/blogs_api.test.js).
+        - Testit läpäistään onnistuneesti, testattu komennolla `npm test`:
+    ```
+     PASS tests/blogs_api.test.js
+    √ a valid blog can be added  (197 ms)
+    ```
+- Refaktoroitu blogin lisäyksen tietokantaan suorittava metodi `blogsRouter.post` käyttämään promisejen sijaan async/awaitia.
