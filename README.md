@@ -14,7 +14,7 @@
 - Sovellus käyttää MongoDB Atlasissa sijaitsevaa tietokantaa.
 - Lisätty ympäristömuuttujat mm. tietokannan URL-osoitteelle ja sovelluksen käytämmälle portille.
 - Sovellukseen on mahdollista lisätä blogeja esim. VS Code REST Clientilla ja sovellus näyttää lisätyt blogit.
-    - Lisättyjä blogeja voi tarkestella myös osoitteessa `localhost:{portti}/api/blogs`
+    - Lisättyjä blogeja voi tarkastella myös osoitteessa `localhost:{portti}/api/blogs`
 
 ### Tehtävä 4.2: blogilista step2
 - Toimii ongelmitta.
@@ -138,3 +138,14 @@ Ran all test suites.
     - Käyttäjien skeema: [models/users.js](/models/users.js)
     - Käyttäjillä on käyttäjätunnus, salasana ja nimi.
 - Lisätty myös [requests/edit_blog.rest](/requests/add_user.rest) pyynnön ja sen toiminnallisuuden testaamiseen.
+
+### Tehtävä 4.10: blogilistan laajennus, step4
+- Toimii ongelmitta.
+- Laajennettu sovellusta siten, että blogiin tulee tieto sen lisänneestä käyttäjästä.
+- Nyt blogin lisäämisen yhteydessä määritellään blogin lisääjäksi joku järjestelmän tietokannassa olevista käyttäjistä.
+    - Muokattu pyyntöä [requests/add_blog.rest](/requests/add_blog.rest) siten, että sillä määritellään myös blogin lisääjä
+- Blogien yhteydessä näytetään nyt lisääjän tiedot.
+    - Lisättyjä blogeja voi tarkastella osoitteessa `localhost:{portti}/api/blogs`
+    - Uusiin blogeihin liitetään nyt aina blogin lisääjän tiedot.
+
+
