@@ -52,8 +52,8 @@
  PASS  tests/dummy.test.js
   √ dummy returns one (2 ms)
                                                                                                                                                                                                         
-Test Suites: 1 passed, 1 total                                                                                                                                                                          
-Tests:       1 passed, 1 total                                                                                                                                                                          
+Test Suites: 1 passed, 1 total
+Tests:       1 passed, 1 total
 Snapshots:   0 total
 Time:        0.93 s
 Ran all test suites.
