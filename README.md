@@ -1,10 +1,5 @@
 # Web-ohjelmointi: Blogilista-backend -projekti
-## Osa 4, tehtävät 4.1 - 
-
-### *Huomioitavaa*
-- Vanhojen vastauksien `index.js` -tiedostot sisältyvät ja ovat nimetty kunkin tehtävän mukaan (esim. `index-4-1.js` tehtävälle 4.1 jne.).
-- Viimeisin vastaus tehtävään on aina tiedostossa `index.js`.
-- Vanhat vastaukset ovat lähinnä varmuuskopioita toimivista versioista ja ne demonstroivat työnkulkua.
+## Osa 4, tehtävät 4.1 - 4.12
 
 ### Tehtävä 4.1: blogilista step1
 - Toimii ongelmitta.
@@ -152,4 +147,12 @@ Ran all test suites.
 - Toimii ongelmitta.
 - Tehty järjestelmään token-perustainen autentikointi.
     - Toiminallisuus toteutettu routeriin [controllers/login.js](/controllers/login.js)
+
+### Tehtävä 4.12: blogilistan laajennus, step6
+- Toimii ongelmitta.
+- Muutettu blogien lisäämistä siten, että se on mahdollista vain, jos lisäyksen tekevässä HTTP POST -pyynnössä on mukana validi token.
+- Tokenin haltija määritellään blogin lisääjäksi.
+- Toiminallisuus toteutettu routeriin [controllers/blogs.js](/controllers/blogs.js)
+- Myös tätä ominaisuutta voidaan testata VS Code REST clientillä ja täten asiaankuuluvat testit on myös päivitetty käsittelemään uudentyyppisiä pyyntöjä.
+    - Nämä pyynnöt löytyy sijannista: [requests](/requests/)
 
