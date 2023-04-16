@@ -148,4 +148,8 @@ Ran all test suites.
     - Lisättyjä blogeja voi tarkastella osoitteessa `localhost:{portti}/api/blogs`
     - Uusiin blogeihin liitetään nyt aina blogin lisääjän tiedot.
 
+### Tehtävä 4.11: blogilistan laajennus, step5
+- Toimii ongelmitta.
+- Tehty järjestelmään token-perustainen autentikointi.
+    - Toiminallisuus toteutettu routeriin [controllers/login.js](/controllers/login.js)
 
