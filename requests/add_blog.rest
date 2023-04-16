@@ -1,10 +1,10 @@
 POST http://localhost:3003/api/blogs/
 Content-Type: application/json
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImNyNyIsImlkIjoiNjQzYWNiNzhhZjU2YmY5ZDExNzU1MjgxIiwiaWF0IjoxNjgxNjM3MzI2fQ.gt242CRfZXAgNU9Qh8UOEa-7hgilju-W0gKg5qxr6Ww
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImxlbzEwIiwiaWQiOiI2NDNhY2MyY2FmNTZiZjlkMTE3NTUyODciLCJpYXQiOjE2ODE2MzkwMTF9.MnDM1ybIzp2nXjvKUGw55ngrDXuGvQcZsYJNPyjTnt8
 
 {
-    "title": "test10", 
-    "author": "Zlatan Ibrahimovic",
+    "title": "test11", 
+    "author": "David Beckham",
     "url": "http://localhost:3003/api/blogs",
-    "likes": 999
+    "likes": 777
 }
